@@ -1,5 +1,3 @@
-# Sistemas Acadêmico Desenvolvido em JAVAFX
-
 Este trabalho tem por objetivo aplicar os conceitos estudados sobre Elementos de Interface, Padrões de Projeto e Programação Distribuída.
 
 Podemos dividi-lo em quatro etapas, a saber:
