@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.controller.FXMLCadastroCursoController">
+   <children>
+      <SplitPane dividerPositions="0.512249443207127" layoutX="24.0" layoutY="200.0" prefHeight="600.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="900.0">
+               <children>
+                  <TableView fx:id="tableViewCursos" layoutX="-10.0" prefHeight="547.0" prefWidth="456.0" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnCursoNome" prefWidth="184.0" text="Nome" />
+                      <TableColumn fx:id="tableColumnSiglaCurso" prefWidth="81.0" text="Sigla" />
+                        <TableColumn fx:id="tableColumnCursoDuracao" prefWidth="92.0" text="Duração" />
+                        <TableColumn fx:id="tableColumnCursoTurno" prefWidth="98.0" text="Turno" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="buttonLimpar" layoutX="315.0" layoutY="553.0" mnemonicParsing="false" onAction="#handleButtonLimpar" prefHeight="36.0" prefWidth="133.0" text="Limpar Seleção" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="322.0" prefWidth="433.0">
+               <children>
+                  <GridPane layoutX="18.0" layoutY="70.0" prefHeight="363.0" prefWidth="394.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="79.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="274.0" minWidth="10.0" prefWidth="271.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="labelCursoNome" text="Nome" />
+                        <Label fx:id="labelCursoSigla" text="Sigla" GridPane.rowIndex="1" />
+                        <Label fx:id="labelCursoDuracao" text="Duração" GridPane.rowIndex="2" />
+                        <Label fx:id="labelCursoTurno" text="Turno" GridPane.rowIndex="3" />
+                        <TextField fx:id="textFieldCursoNome" prefWidth="197.0" GridPane.columnIndex="1" />
+                        <TextField fx:id="textFieldCursoSigla" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="31.0" prefWidth="101.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="textFieldCursoDuracao" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="144.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="textFieldCursoTurno" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="144.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                     </children>
+                  </GridPane>
+                  <Group layoutX="108.0" layoutY="367.0" AnchorPane.bottomAnchor="21.0" AnchorPane.rightAnchor="14.0">
+                     <children>
+                        <Button fx:id="buttonRemover" layoutX="232.0" layoutY="178.0" mnemonicParsing="false" onAction="#handleButtonRemover" prefHeight="31.0" prefWidth="80.0" text="Remover" />
+                        <Button fx:id="buttonAlterar" layoutX="144.0" layoutY="178.0" mnemonicParsing="false" onAction="#handleButtonAlterar" prefHeight="31.0" prefWidth="80.0" text="Alterar" />
+                        <Button fx:id="buttonInserir" layoutX="56.0" layoutY="178.0" mnemonicParsing="false" onAction="#handleButtonInserir" prefHeight="31.0" prefWidth="80.0" text="Inserir" />
+                     </children>
+                  </Group>
+                  <Text layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Cursos" textAlignment="CENTER" wrappingWidth="433.99999123066664">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
