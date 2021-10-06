@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="TrabalhoPOO2-Academico-MarcioJr.jnlp">
+  <information>
+    <title>TrabalhoPOO2-Academico-MarcioJr</title>
+    <vendor>Rafael</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="TrabalhoPOO2-Academico-MarcioJr.jar" size="598879" download="eager" />
+    <jar href="lib\aopalliance-repackaged-2.5.0-b32.jar" size="14768" download="eager" />
+    <jar href="lib\hk2-api-2.5.0-b32.jar" size="185793" download="eager" />
+    <jar href="lib\hk2-locator-2.5.0-b32.jar" size="187274" download="eager" />
+    <jar href="lib\hk2-utils-2.5.0-b32.jar" size="134908" download="eager" />
+    <jar href="lib\jackson-core-asl-1.9.11.jar" size="232131" download="eager" />
+    <jar href="lib\jackson-jaxrs-1.9.11.jar" size="18327" download="eager" />
+    <jar href="lib\jackson-mapper-asl-1.9.11.jar" size="780421" download="eager" />
+    <jar href="lib\jackson-xc-1.9.11.jar" size="27080" download="eager" />
+    <jar href="lib\javassist-3.20.0-GA.jar" size="750581" download="eager" />
+    <jar href="lib\javax.annotation-api-1.2.jar" size="26366" download="eager" />
+    <jar href="lib\javax.inject-2.5.0-b32.jar" size="5951" download="eager" />
+    <jar href="lib\javax.ws.rs-api-2.0.1.jar" size="115534" download="eager" />
+    <jar href="lib\jersey-client-2.25.1.jar" size="168997" download="eager" />
+    <jar href="lib\jersey-common-2.25.1.jar" size="715923" download="eager" />
+    <jar href="lib\jersey-guava-2.25.1.jar" size="971309" download="eager" />
+    <jar href="lib\jersey-media-json-jackson-2.3.1.jar" size="4931" download="eager" />
+    <jar href="lib\osgi-resource-locator-1.0.1.jar" size="20235" download="eager" />
+    <jar href="lib\postgresql-9.2-1002.jdbc4.jar" size="576248" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="TrabalhoPOO2-Academico-MarcioJr" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="javafx.Main"  name="TrabalhoPOO2-Academico-MarcioJr" />
+  <update check="always"/>
+</jnlp>
