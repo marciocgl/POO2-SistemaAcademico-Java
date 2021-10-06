@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.controller.FXMLRelatorioTurmasECursosCadastradosController">
+   <children>
+      <TableView fx:id="tableViewRelatorio" prefHeight="550.0" prefWidth="900.0">
+        <columns>
+          <TableColumn fx:id="tableColumnTurma" prefWidth="437.0" text="Turmas" />
+          <TableColumn fx:id="tableColumnCurso" prefWidth="462.0" text="Cursos" />
+        </columns>
+         <columnResizePolicy>
+         </columnResizePolicy>
+      </TableView>
+      <Button layoutX="380.0" layoutY="555.0" mnemonicParsing="false" onAction="#handleButtonImprimirCursosETurma" text="Imprimir Relatório" />
+   </children>
+</AnchorPane>

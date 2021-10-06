@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.controller.FXMLVBoxMainController">
+   <children>
+      <MenuBar prefHeight="47.0" prefWidth="900.0">
+        <menus>
+          <Menu fx:id="CadastrosAlunosCursosTurmas" mnemonicParsing="false" text="Cadastros">
+            <items>
+                <MenuItem fx:id="menuItemCadastroCursos" mnemonicParsing="false" onAction="#showFXMLAnchorPaneCadastroCursos" text="Cursos" />
+              <MenuItem fx:id="menuItemCadastroTurmas" mnemonicParsing="false" onAction="#showFXMLAnchorPaneCadastroTurmas" text="Turma" />
+                  <MenuItem fx:id="menuItemCadastroAlunos" mnemonicParsing="false" onAction="#showFXMLAnchorPaneCadastroAlunos" text="Alunos" />
+            </items>
+          </Menu>
+            <Menu fx:id="MenuNotas" mnemonicParsing="false" text="Notas">
+              <items>
+                <MenuItem fx:id="menuItemNotas" mnemonicParsing="false" onAction="#showFXMLAnchorPaneFXMLNotas" text="Inserir Notas" />
+              </items>
+            </Menu>
+          <Menu fx:id="MenuGraficos" mnemonicParsing="false" text="Gráficos">
+            <items>
+              <MenuItem fx:id="MenuItemGraficos" mnemonicParsing="false" onAction="#showFXMLAnchorPaneFXMLGraficos" text="Exibir Gráficos" />
+            </items>
+          </Menu>
+            <Menu fx:id="MenuRelatórios" mnemonicParsing="false" text="Relatórios">
+              <items>
+                <MenuItem fx:id="MenuItemRelatorios" mnemonicParsing="false" onAction="#showFXMLAnchorPaneFXMLRelatorios" text="Exibir Relatórios" />
+              </items>
+            </Menu>
+            <Menu fx:id="MenuThreadseSockets" mnemonicParsing="false" text="Threads e Sockets">
+              <items>
+                <MenuItem fx:id="menuItemThreadseSocketsNoticias" mnemonicParsing="false" onAction="#showFXMLAnchorPaneFXMLNoticiasThreadsESockets" text="Notícias" />
+              </items>
+            </Menu>
+            <Menu fx:id="MenuWebServices" mnemonicParsing="false" text="Web Services">
+              <items>
+                <MenuItem fx:id="menuItemWebServicesNoticias" mnemonicParsing="false" onAction="#showFXMLAnchorPaneFXMLWebServices" text="Notícias" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="anchorPane" prefHeight="600.0" prefWidth="900.0">
+         <children>
+            <Button layoutX="242.0" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="285.0" prefWidth="417.0" styleClass="im1" stylesheets="@../resources/fxmlcss.css" textFill="#08070800">
+               <effect>
+                  <Blend mode="DARKEN" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+            </Button>
+         </children></AnchorPane>
+   </children>
+</VBox>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="webServices.FXMLWebServicesController">
+   <children>
+      <Text fill="#dd3030" layoutX="332.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notícias" textAlignment="CENTER" wrappingWidth="236.626953125">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Text>
+      <Label fx:id="labelWebServicesNoticias" layoutX="103.0" layoutY="237.0" prefHeight="143.0" prefWidth="694.0" style="-fx-border-image-width: 3; -fx-border-color: black; -fx-border-radius: 10;">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <padding>
+            <Insets left="8.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>
